@@ -6,7 +6,6 @@ CFLAGS = -Wall -Wextra -std=c11
 # Source files
 SRCS = utils.c file_ops.c dir_ops.c fs_api.c main.c
 
-# Object files
 OBJS = $(SRCS:.c=.o)
 
 # Header files
@@ -23,6 +22,7 @@ $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -o $@ $(OBJS)
 
 %.o: %.c $(HEADERS)
+
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
