@@ -1,0 +1,77 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-std=c11",
+      "-c",
+      "-o",
+      "utils.o",
+      "utils.c"
+    ],
+    "directory": "/home/fei/git/ExampleCodeBases/SimpleFileSystem",
+    "file": "/home/fei/git/ExampleCodeBases/SimpleFileSystem/utils.c",
+    "output": "/home/fei/git/ExampleCodeBases/SimpleFileSystem/utils.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-std=c11",
+      "-c",
+      "-o",
+      "file_ops.o",
+      "file_ops.c"
+    ],
+    "directory": "/home/fei/git/ExampleCodeBases/SimpleFileSystem",
+    "file": "/home/fei/git/ExampleCodeBases/SimpleFileSystem/file_ops.c",
+    "output": "/home/fei/git/ExampleCodeBases/SimpleFileSystem/file_ops.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-std=c11",
+      "-c",
+      "-o",
+      "dir_ops.o",
+      "dir_ops.c"
+    ],
+    "directory": "/home/fei/git/ExampleCodeBases/SimpleFileSystem",
+    "file": "/home/fei/git/ExampleCodeBases/SimpleFileSystem/dir_ops.c",
+    "output": "/home/fei/git/ExampleCodeBases/SimpleFileSystem/dir_ops.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-std=c11",
+      "-c",
+      "-o",
+      "fs_api.o",
+      "fs_api.c"
+    ],
+    "directory": "/home/fei/git/ExampleCodeBases/SimpleFileSystem",
+    "file": "/home/fei/git/ExampleCodeBases/SimpleFileSystem/fs_api.c",
+    "output": "/home/fei/git/ExampleCodeBases/SimpleFileSystem/fs_api.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-std=c11",
+      "-c",
+      "-o",
+      "main.o",
+      "main.c"
+    ],
+    "directory": "/home/fei/git/ExampleCodeBases/SimpleFileSystem",
+    "file": "/home/fei/git/ExampleCodeBases/SimpleFileSystem/main.c",
+    "output": "/home/fei/git/ExampleCodeBases/SimpleFileSystem/main.o"
+  }
+]
