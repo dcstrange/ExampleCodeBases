@@ -8,7 +8,7 @@ services:
       - "7689:7687"
     volumes:
       - ./neo4j-data/simplefs1/data:/data
-      - ./neo4j-data/isimplefs1/logs:/logs
+      - ./neo4j-data/implefs1/logs:/logs
       - ./neo4j-data/simplefs1/backups:/backups
       - ./neo4j-data/simplefs1/import:/var/lib/neo4j/import
     environment:
