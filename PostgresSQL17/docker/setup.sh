@@ -28,7 +28,7 @@ elif command -v python3 &>/dev/null; then
     else
         echo "无法自动安装Python依赖，使用纯Docker命令启动..."
         # 方法3: 使用纯Docker命令
-        docker run -d --name simplefs \
+        docker run -d --name postgressql17 \
           -p 7674:7474 \
           -p 7689:7687 \
           -v $(pwd)/neo4j-data/postgressql17/data:/data \
@@ -43,12 +43,12 @@ elif command -v python3 &>/dev/null; then
           -e NEO4J_dbms_default__listen__address=0.0.0.0 \
           neo4j:latest
         
-        docker ps | grep simplefs
+        docker ps | grep postgressql17
     fi
 else
     # 方法3: 使用纯Docker命令
     echo "使用纯Docker命令启动..."
-    docker run -d --name simplefs \
+    docker run -d --name postgressql17 \
       -p 7674:7474 \
       -p 7689:7687 \
       -v $(pwd)/neo4j-data/postgressql17/data:/data \
@@ -63,7 +63,7 @@ else
       -e NEO4J_dbms_default__listen__address=0.0.0.0 \
       neo4j:latest
     
-    docker ps | grep simplefs
+    docker ps | grep postgressql17
 fi
 
 echo "Neo4j已启动！"
