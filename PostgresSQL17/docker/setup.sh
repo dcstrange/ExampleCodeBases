@@ -66,7 +66,16 @@ else
     docker ps | grep postgressql17
 fi
 
-echo "Neo4j已启动！"
+echo "等待 Neo4j 就绪…"
+until nc -z localhost 7689; do
+    echo "  - 等待 Bolt(7689)…"
+    sleep 2
+done
+until curl -s -f http://localhost:7674/; do
+    echo "  - 等待 HTTP(7674)…"
+    sleep 2
+done
+echo "✅ Neo4j 已完全就绪"
 echo "浏览器界面: http://localhost:7674"
 echo "用户名: neo4j"
 echo "密码: passwd123"
