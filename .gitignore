@@ -19,3 +19,4 @@ SimpleFileSystem/filesystem
 # Ignore compiled Rust files
 c2rust/target/
 **/neo4j-data/
+**/neo4j-data-explained/

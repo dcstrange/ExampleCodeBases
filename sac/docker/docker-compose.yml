@@ -1,0 +1,20 @@
+version: '3'
+services:
+  neo4j:
+    image: neo4j:latest
+    container_name: sac
+    ports:
+      - "7674:7474"
+      - "7689:7687"
+    volumes:
+      - ./neo4j-data/sac/data:/data
+      - ./neo4j-data/sac/logs:/logs
+      - ./neo4j-data/sac/backups:/backups
+      - ./neo4j-data/sac/import:/var/lib/neo4j/import
+    environment:
+      - NEO4J_apoc_import_file_enabled=true
+      - NEO4J_apoc_export_file_enabled=true
+      - NEO4J_apoc_import_file_use__neo4j__config=true
+      - NEO4J_PLUGINS=["graph-data-science", "apoc"]
+      - NEO4J_AUTH=neo4j/passwd123
+      - NEO4J_dbms_default__listen__address=0.0.0.0
