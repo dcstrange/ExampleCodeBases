@@ -7,10 +7,10 @@ services:
       - "7674:7474"
       - "7689:7687"
     volumes:
-      - ./neo4j-data/sac/data:/data
-      - ./neo4j-data/sac/logs:/logs
-      - ./neo4j-data/sac/backups:/backups
-      - ./neo4j-data/sac/import:/var/lib/neo4j/import
+      - ./neo4j-data/data:/data
+      - ./neo4j-data/logs:/logs
+      - ./neo4j-data/backups:/backups
+      - ./neo4j-data/import:/var/lib/neo4j/import
     environment:
       - NEO4J_apoc_import_file_enabled=true
       - NEO4J_apoc_export_file_enabled=true
